@@ -91,6 +91,29 @@
 
         .cat-5 .card-front { border-top-color: #555F5A; }
         .cat-5 .card-back { background-color: #555F5A; border-bottom-color: #E35220; }
+
+        /* Nieuwe, opvallende witte knop met hover effect */
+        .btn-link {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #2C3531;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            text-align: center;
+            transition: all 0.2s;
+            margin-top: 15px !important;
+            align-self: flex-start;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            color: #E35220;
+        }
     </style>
 </head>
 <body class="p-4 md:p-8 antialiased">
@@ -98,7 +121,7 @@
     <!-- Header Section -->
     <div class="max-w-7xl mx-auto mb-10">
         <div class="bg-hih-dark text-white p-8 md:p-12 rounded-[40px_0_40px_0] shadow-2xl relative overflow-hidden">
-            <div class="absolute -right-5 -bottom-5 text-white opacity-5 text-9xl">📚</div>
+            <div class="absolute -right-5 -bottom-5 text-white opacity-5 text-9xl">🔗</div>
             <div class="inline-block bg-hih-orange text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-widest">
                 Database: Sociaal.Net
             </div>
@@ -106,7 +129,7 @@
                 Literatuurlijst Vermaatschappelijking
             </h1>
             <p class="text-hih-sand text-lg max-w-3xl leading-relaxed">
-                Een exhaustief overzicht van de artikels rond het thema 'Vermaatschappelijking van de zorg'. Dit dient als brondocument en bewijsmateriaal voor de 10-jarenstrategie van De Moester. Beweeg over de kaarten voor de samenvatting per publicatie.
+                Dit interactieve overzicht bevat alle officiële artikels, samenvattingen én de rechtstreekse weblinks. Dit dient als brondocument en bewijsmateriaal voor de 10-jarenstrategie van De Moester. Beweeg over de kaarten en klik op de witte knop om de artikels te lezen.
             </p>
         </div>
     </div>
@@ -117,7 +140,6 @@
         <section class="cat-1">
             <div class="border-b-2 border-hih-orange mb-6 pb-2">
                 <h2 class="text-2xl font-black text-hih-dark uppercase">Cat 1. De Grenzen van Zelfredzaamheid</h2>
-                <p class="text-hih-gray text-sm">Vermaatschappelijking mag geen excuus zijn om professionele zorg af te bouwen.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Art 1 -->
@@ -125,14 +147,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">🛡️</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond • Nov '23</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">'We mogen mensen niet dwingen tot zelfredzaamheid'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Socioloog Jan Willem Duyvendak fileert de politieke nadruk op 'eigen kracht'. Sommige dogma's lijken boven elke discussie verheven, maar creëren een samenleving waarin zwakkeren verdrinken.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Bevestigt dat we het begeleidend netwerk (instructeurs) in De Moester hard nodig blijven hebben, zelfs binnen een open Clubhouse-model.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Socioloog Jan Willem Duyvendak fileert de politieke nadruk op 'eigen kracht'. Sommige dogma's lijken boven elke discussie verheven, maar creëren een samenleving waarin zwakkeren verdrinken.</p>
+                            </div>
+                            <a href="https://sociaal.net/achtergrond/we-mogen-mensen-niet-dwingen-tot-zelfredzaamheid-en-eigen-kracht/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -141,14 +163,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">🏥</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Opinie • Mei '22</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Opinie</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">'Ouderen te lang thuis laten wonen, is schuldig verzuim'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Een grote groep ouderen zal intense zorg nodig hebben en minder mobiel zijn. Dan is het geen goed idee om iedereen krampachtig aan te sporen om thuis te blijven wonen.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Pleidooi voor residentiële oplossingen wanneer nodig, parallel met ons betoog voor IPSO (beschut wonen) en de respijthuizen.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Een grote groep ouderen zal intense zorg nodig hebben en minder mobiel zijn. Dan is het geen goed idee om iedereen krampachtig aan te sporen om zo lang mogelijk thuis te blijven wonen.</p>
+                            </div>
+                            <a href="https://sociaal.net/?s=Zoveel+mogelijk+ouderen+zo+lang+mogelijk+thuis+laten+wonen" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -157,14 +179,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">📈</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Opinie • Dec '23</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Opinie</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">'Zonder de zorgsector kunnen we niet leven'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">De zorg is een fundament van onze samenleving. Het is hoog tijd dat we de zorgsector erkennen als essentiële economie in plaats van een bodemloze kostenput.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Argument voor het OCMW/Stad Gent: de subsidies voor AMA-instructeurs zijn een essentiële maatschappelijke investering.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">De zorg is een fundament van onze samenleving. Het is hoog tijd dat we de zorgsector erkennen als essentiële economie in plaats van een bodemloze kostenput.</p>
+                            </div>
+                            <a href="https://sociaal.net/opinie/zonder-zorgsector-kunnen-we-niet-leven/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -173,14 +195,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">🤔</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond • Mrt '21</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">'Mensen hebben het gevoel dat ze er niet toe doen'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Ethicus Ignaas Devisch over vermaatschappelijking: sociaal werk moet politiserend zijn. Je kan mensen niet zomaar loslaten in een samenleving die hen niet waardeert.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Bevestigt de missie van De Moester: het herstel van eigenwaarde via betekenisvol werk is cruciaal voor succesvolle integratie.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Ethicus Ignaas Devisch over vermaatschappelijking: sociaal werk moet politiserend zijn. Je kan mensen niet zomaar loslaten in een samenleving die hen niet waardeert.</p>
+                            </div>
+                            <a href="https://sociaal.net/achtergrond/ignaas-devisch-sommige-mensen-hebben-het-gevoel-dat-ze-er-niet-toe-doen/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +213,6 @@
         <section class="cat-2">
             <div class="border-b-2 border-[#0284c7] mb-6 pb-2">
                 <h2 class="text-2xl font-black text-hih-dark uppercase">Cat 2. De Zorgzame Buurt</h2>
-                <p class="text-hih-gray text-sm">Het bouwen van lokale, inclusieve ontmoetingsplaatsen waar formele en informele zorg samenkomen.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Art 5 -->
@@ -199,14 +220,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">☕</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond • Jan '20</span>
-                            <h3 class="text-lg font-black text-hih-dark mb-2">Informele ontmoetingsplekken zorgen voor structurele verandering</h3>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond</span>
+                            <h3 class="text-lg font-black text-hih-dark mb-2">Informele ontmoetingsplekken zorgen voor verandering</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Onderzoek toont aan dat informele plekken in de buurt een ijzersterke uitvalsbasis vormen om sociale rechten te realiseren op structureel niveau.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Dit is het exacte model van het domein aan de Putstraat (plantenverkoop, tearoom) en de samenwerking met Poco Loco.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Onderzoek toont aan dat informele plekken in de buurt een ijzersterke uitvalsbasis vormen om sociale rechten te realiseren op structureel niveau.</p>
+                            </div>
+                            <a href="https://sociaal.net/achtergrond/informele-ontmoetingsplekken-in-de-buurt/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -215,14 +236,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">🏘️</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Boekbespreking • Jul '20</span>
-                            <h3 class="text-lg font-black text-hih-dark mb-2">'Zorgzame buurt moet oog hebben voor kwetsbare bewoners'</h3>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Boek</span>
+                            <h3 class="text-lg font-black text-hih-dark mb-2">'Zorgzame buurt moet oog hebben voor kwetsbaren'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Buurtgerichte zorg is dé strategie om inclusieve wijken te ontwikkelen. Maar dit vraagt actieve regie zodat de zwaarst kwetsbaren niet uit de boot vallen in een 'hippe' buurt.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Onderbouwt de strategie om babyboomers (actieve senioren) actief te mixen met GGZ-leden binnen ons beschermde domein.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Buurtgerichte zorg is dé strategie om inclusieve wijken te ontwikkelen. Maar dit vraagt regie zodat de zwaarst kwetsbaren niet uit de boot vallen.</p>
+                            </div>
+                            <a href="https://sociaal.net/boek/zorgzame-buurt-kwetsbare-bewoners/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -231,14 +252,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">🕊️</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Opinie • Apr '22</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Opinie</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">'Ziekte en rouw verdienen aandacht in zorgzame buurten'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Thema's als rouw, sterven en zware ziekte horen bij het leven. Zorgzame buurten moeten de moed hebben om ook deze moeilijke thema's te normaliseren.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Een pleidooi om psychiatrie (en de moeilijkheden van GGZ) niet langer te verstoppen, maar open te trekken naar de wijk.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Thema's als rouw, sterven en zware ziekte horen bij het leven. Zorgzame buurten moeten de moed hebben om ook deze thema's te normaliseren.</p>
+                            </div>
+                            <a href="https://sociaal.net/opinie/ziekte-en-rouw-zorgzame-buurten-compassionate-communities/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -249,7 +270,6 @@
         <section class="cat-3">
             <div class="border-b-2 border-hih-green mb-6 pb-2">
                 <h2 class="text-2xl font-black text-hih-dark uppercase">Cat 3. De Druk op de Mantelzorger</h2>
-                <p class="text-hih-gray text-sm">Zonder het informele netwerk van familie en vrienden valt de vermaatschappelijking direct stil.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
                 <!-- Art 8 -->
@@ -257,11 +277,11 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden p-4">
                             <span class="text-2xl mb-2">📋</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase mb-1">Opinie • Mrt '21</span>
-                            <h3 class="text-base font-black text-hih-dark mb-1">Mantelzorg-coördinator</h3>
+                            <h3 class="text-base font-black text-hih-dark mb-1">Mantelzorgcoördinator verlicht de last</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 p-4">
-                            <p class="text-xs text-white/90 leading-relaxed">Onderzoekers stellen voor om mantelzorgcoördinatoren aan te stellen omdat de zorglast voor families onhoudbaar zwaar wordt.</p>
+                            <p class="text-xs text-white/90 leading-relaxed">De zorglast voor families is vaak onhoudbaar zwaar.</p>
+                            <a href="https://sociaal.net/?s=Mantelzorgcoördinator+kan+zorglast+verlichten" target="_blank" class="btn-link">Naar Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -270,12 +290,11 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden p-4">
                             <span class="text-2xl mb-2">🏖️</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase mb-1">Opinie • Jul '20</span>
-                            <h3 class="text-base font-black text-hih-dark mb-1">Recht op vakantie</h3>
+                            <h3 class="text-base font-black text-hih-dark mb-1">Iedereen heeft recht op vakantie</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 p-4">
-                            <p class="text-xs text-white/90 leading-relaxed mb-2">Mantelzorgers zijn sleutelfiguren, maar raken overbelast. Vakantie is helend, maar de stap ernaartoe is moeilijk wegens schuldgevoel.</p>
-                            <p class="text-[10px] font-bold text-hih-orange">Perfecte argumentatie voor André's & John's Inn (Respijthuizen).</p>
+                            <p class="text-xs text-white/90 leading-relaxed mb-2">Vakantie is helend, maar de stap ernaartoe is moeilijk wegens schuldgevoel.</p>
+                            <a href="https://sociaal.net/opinie/iedereen-heeft-recht-op-vakantie-ook-mantelzorgers/" target="_blank" class="btn-link">Naar Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -284,11 +303,11 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden p-4">
                             <span class="text-2xl mb-2">🚪</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase mb-1">Opinie • Dec '19</span>
                             <h3 class="text-base font-black text-hih-dark mb-1">Mantelzorg stopt niet aan de deur</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 p-4">
-                            <p class="text-xs text-white/90 leading-relaxed">Als een zorgvrager verhuist naar een WZC of instelling is de mantelzorger niet uitgespeeld. Voorzieningen hebben baat bij hun expertise.</p>
+                            <p class="text-xs text-white/90 leading-relaxed">Als een zorgvrager verhuist naar een WZC of instelling is de mantelzorger niet uitgespeeld.</p>
+                            <a href="https://sociaal.net/?s=Mantelzorg+stopt+niet+aan+de+deur" target="_blank" class="btn-link">Naar Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -297,11 +316,11 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden p-4">
                             <span class="text-2xl mb-2">😷</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase mb-1">Achtergrond • Jun '20</span>
                             <h3 class="text-base font-black text-hih-dark mb-1">Coronadruk op mantelzorg</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 p-4">
-                            <p class="text-xs text-white/90 leading-relaxed">2 op de 3 mantelzorgers werden zwaarder belast door corona. "De rek is eruit bij de onzichtbare helden van de zorg."</p>
+                            <p class="text-xs text-white/90 leading-relaxed">2 op de 3 mantelzorgers werden zwaarder belast. "De rek is eruit."</p>
+                            <a href="https://sociaal.net/?s=Twee+op+drie+mantelzorgers+zwaarder+belast+door+corona" target="_blank" class="btn-link">Naar Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -310,22 +329,21 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden p-4">
                             <span class="text-2xl mb-2">🏠</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase mb-1">Verhaal • Apr '20</span>
                             <h3 class="text-base font-black text-hih-dark mb-1">In lockdown met zorgenmeisje</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 p-4">
-                            <p class="text-xs text-white/90 leading-relaxed">Getuigenis van een moeder die fulltime zorg opneemt wanneer de instelling sluit. Illustreert de zware praktische realiteit van thuiszorg.</p>
+                            <p class="text-xs text-white/90 leading-relaxed">Getuigenis van een moeder die fulltime zorg opneemt. De realiteit van thuiszorg.</p>
+                            <a href="https://sociaal.net/verhaal/in-lockdown-met-ons-zorgenmeisje/" target="_blank" class="btn-link">Naar Artikel ➔</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CATEGORIE 4: NIEUWE VORMEN VAN SAMENLEVEN -->
+        <!-- CATEGORIE 4: RADICALE ZORG -->
         <section class="cat-4">
             <div class="border-b-2 border-[#8b5cf6] mb-6 pb-2">
                 <h2 class="text-2xl font-black text-hih-dark uppercase">Cat 4. Radicale, Nieuwe Zorgmodellen</h2>
-                <p class="text-hih-gray text-sm">Grensverleggende initiatieven die doelgroepen mengen en outreachend werken.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Art 13 -->
@@ -333,14 +351,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">🔑</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Verhaal • Okt '20</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Verhaal</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">Op bezoek in het transitiehuis</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">In het transitiehuis in Mechelen verblijven vijftien mannen, die aan het eind van hun detentie opnieuw de weg in de maatschappij zoeken in een gewone woning.</p>
-                            <h4 class="text-sm font-black mb-1 text-hih-dark">Context De Moester:</h4>
-                            <p class="text-xs text-hih-dark font-medium leading-relaxed">Perfecte illustratie van de 'forensische instroom' via IPSO in De Moester.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">In Mechelen verblijven 15 mannen, die aan het eind van hun detentie opnieuw de weg in de maatschappij zoeken in een gewone woning.</p>
+                            </div>
+                            <a href="https://sociaal.net/verhaal/op-bezoek-in-het-transitiehuis/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -349,12 +367,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">👨‍👩‍👧</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Verhaal • Sep '20</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Verhaal</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">'Je krijgt zo veel terug van een pleeggast in huis'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">België is een van de weinige landen waar pleegzorg voor volwassenen met een handicap of psychiatrische problematiek bestaat. Vermaatschappelijking tot in de huiskamer.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Volwassenen met een psychiatrische problematiek die opgevangen worden in pleeggezinnen. Vermaatschappelijking tot in de huiskamer.</p>
+                            </div>
+                            <a href="https://sociaal.net/verhaal/pleegzorg-voor-volwassenen/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -363,12 +383,14 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">🤝</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Verhaal • Dec '19</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Verhaal</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">'Het voelt niet meer als vrijwilligerswerk'</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Pleegzorg organiseert mobiele en ambulante begeleiding met vrijwilligers. Toont aan hoe informele zorgprofessionals een diepe vertrouwensband kunnen opbouwen.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Hoe mobiele vrijwilligers een volwaardige en diepe vertrouwensband opbouwen met mensen die extra begeleiding nodig hebben.</p>
+                            </div>
+                            <a href="https://sociaal.net/verhaal/het-voelt-niet-meer-als-vrijwilligerswerk/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -377,19 +399,21 @@
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden">
                             <span class="text-3xl mb-3">💶</span>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond • Okt '20</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Achtergrond</span>
                             <h3 class="text-lg font-black text-hih-dark mb-2">Budgetgidsen strijden tegen onderbescherming</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180">
-                            <h4 class="text-sm font-black mb-2 text-white border-b border-white/20 pb-1">Samenvatting:</h4>
-                            <p class="text-xs text-white/90 leading-relaxed mb-3">Duizenden mensen krijgen niet de hulp waar ze recht op hebben door bureaucratie. Budgetgidsen begeleiden mensen fysiek door dit kluwen. Een prachtig voorbeeld van outreachend werk.</p>
+                            <div>
+                                <p class="text-xs text-white/90 leading-relaxed mb-3">Duizenden mensen krijgen niet de hulp waar ze recht op hebben door bureaucratie. Budgetgidsen begeleiden mensen fysiek door dit kluwen.</p>
+                            </div>
+                            <a href="https://sociaal.net/achtergrond/budgetgidsen-strijden-tegen-onderbescherming/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CATEGORIE 5: OVERIGE (Brede Maatschappelijke Context) -->
+        <!-- CATEGORIE 5: OVERIGE -->
         <section class="cat-5">
             <div class="border-b-2 border-hih-gray mb-6 pb-2">
                 <h2 class="text-xl font-black text-hih-dark uppercase">Cat 5. Brede Maatschappelijke Context</h2>
@@ -399,11 +423,12 @@
                 <div class="flip-card perspective-1000 w-full h-[220px]">
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden p-4">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Opinie • Nov '20</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Opinie</span>
                             <h3 class="text-base font-black text-hih-dark mb-1">10 lessen uit de coronacrisis</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 p-4">
-                            <p class="text-xs text-white/90 leading-relaxed">"Als de verzorgingsstaat niet thuis geeft, krijgen mensen het gevoel dat ze er alleen voor staan." Een structurele waarschuwing rond afbouw van de welzijnsstaat.</p>
+                            <p class="text-xs text-white/90 leading-relaxed mb-2">"Als de verzorgingsstaat niet thuis geeft, krijgen mensen het gevoel dat ze er alleen voor staan."</p>
+                            <a href="https://sociaal.net/?s=Tien+lessen+uit+de+coronacrisis" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
@@ -411,11 +436,12 @@
                 <div class="flip-card perspective-1000 w-full h-[220px]">
                     <div class="flip-card-inner relative w-full h-full">
                         <div class="card-front absolute w-full h-full backface-hidden p-4">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Achtergrond • Jun '21</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Achtergrond</span>
                             <h3 class="text-base font-black text-hih-dark mb-1">Geldstromen naar het thuisland (Remittances)</h3>
                         </div>
                         <div class="card-back absolute w-full h-full backface-hidden rotate-y-180 p-4">
-                            <p class="text-xs text-white/90 leading-relaxed">Mensen met migratieroots stuurden in 2020 ruim 5 miljard euro vanuit België naar hun land van herkomst. Illustreert mondiale informele (financiële) zorgnetwerken.</p>
+                            <p class="text-xs text-white/90 leading-relaxed mb-2">Mensen met migratieroots stuurden in 2020 ruim 5 miljard euro vanuit België naar hun land van herkomst.</p>
+                            <a href="https://sociaal.net/achtergrond/waarom-mensen-met-migratieroots-jaarlijks-miljarden-naar-thuisland-sturen/" target="_blank" class="btn-link">Lees Artikel ➔</a>
                         </div>
                     </div>
                 </div>
